@@ -1,6 +1,6 @@
 {
   "required": true,
-  "package": "net.bunten.linearxp.mixin",
+  "package": "net.bunten.flatxpprogression.mixin",
   "compatibilityLevel": "JAVA_21",
   "mixins": [
     "PlayerEntityMixin"

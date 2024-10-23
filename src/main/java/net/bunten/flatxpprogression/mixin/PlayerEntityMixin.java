@@ -1,4 +1,4 @@
-package net.bunten.linearxp.mixin;
+package net.bunten.flatxpprogression.mixin;
 
 import net.minecraft.entity.player.PlayerEntity;
 import org.spongepowered.asm.mixin.Mixin;
