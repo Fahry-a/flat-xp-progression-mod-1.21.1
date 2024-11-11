@@ -1,5 +1,6 @@
 package net.bunten.flatxpprogression.mixin;
 
+import net.bunten.flatxpprogression.ProgressionConfig;
 import net.minecraft.entity.player.PlayerEntity;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
@@ -11,6 +12,8 @@ public class PlayerEntityMixin {
 
 	@Inject(at = @At("HEAD"), method = "getNextLevelExperience", cancellable = true)
 	private void getNextLevelExperience(CallbackInfoReturnable<Integer> info) {
-		info.setReturnValue(50);
+		if (!ProgressionConfig.getOrCreate().DISABLE_MOD) {
+			info.setReturnValue(ProgressionConfig.getOrCreate().XP_PER_LEVEL);
+		}
 	}
 }
