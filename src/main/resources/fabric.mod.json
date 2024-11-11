@@ -3,7 +3,7 @@
 	"id": "flat-xp-progression",
 	"version": "${version}",
 	"name": "Flat XP Progression",
-	"description": "",
+	"description": "Changes XP progression to a flat rate instead of exponential",
 	"authors": [
 		"bunten"
 	],
@@ -20,7 +20,7 @@
 	],
 	"depends": {
 		"fabricloader": ">=0.16.7",
-		"minecraft": "~1.21.2",
+		"minecraft": ">=1.21.2",
 		"java": ">=21"
 	}
 }
